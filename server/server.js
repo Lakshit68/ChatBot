@@ -39,7 +39,7 @@ const io = new Server(server, {
 });
 
 // Connect MongoDB
-const mongoUri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017';
+const mongoUri = process.env.MONGO_URI ;
 await mongoose.connect(mongoUri, { dbName: 'chatbot_app' });
 
 // Middleware
